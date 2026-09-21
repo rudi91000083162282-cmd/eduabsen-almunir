@@ -604,16 +604,16 @@
             try { parsedCustomConfig = JSON.parse(savedCustomConfig); } catch(e) {}
         }
 
-        const firebaseConfig = typeof __firebase_config !== 'undefined' 
-            ? JSON.parse(__firebase_config) 
-            : (parsedCustomConfig || {
-                apiKey: "demo-key",
-                authDomain: "eduabsen-pro.firebaseapp.com",
-                projectId: "eduabsen-pro",
-                storageBucket: "eduabsen-pro.appspot.com",
-                messagingSenderId: "123456789",
-                appId: "1:123456789:web:abcdef"
-            });
+        const firebaseConfig = {
+          apiKey: "AIzaSyAPzpQp6s56eSMPq_W4kcyCwy_2abDLzXo",
+          authDomain: "absensi-9e1c9.firebaseapp.com",
+          databaseURL: "https://absensi-9e1c9-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "absensi-9e1c9",
+          storageBucket: "absensi-9e1c9.firebasestorage.app",
+          messagingSenderId: "389515652519",
+          appId: "1:389515652519:web:4ac277b467ad8aa95f1a82",
+          measurementId: "G-KQY0JVDRNB"
+        };
 
         window.openModal = function(id) {
             const el = document.getElementById(id);
